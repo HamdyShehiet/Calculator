@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="style/style.css">
+</head>
+<body>
+ <div class="container">
+    <input id="display" class="value" placeholder="0" readonly></input>
+    <div class="buttons" id="buttons">
+        <div>
+            <button class="button" onclick="clearValue()">C</button>
+            <button onclick="appendInField('%')">%</button>
+            <button onclick="appendInField('/')">/</button>
+            </div>
+            <div>
+                <button onclick="appendInField('7')">7</button>
+                <button onclick="appendInField('8')">8</button>
+                <button onclick="appendInField('9')">9</button>
+                <button onclick="appendInField('*')">*</button>
+            </div>
+            <div>
+                <button onclick="appendInField('4')">4</button>
+                <button onclick="appendInField('5')">5</button>
+                <button onclick="appendInField('6')">6</button>
+                <button onclick="appendInField('-')">-</button>
+            </div>
+            <div>
+                <button onclick="appendInField('1')">1</button>
+                <button onclick="appendInField('2')">2</button>
+                <button onclick="appendInField('3')">3</button>
+                <button onclick="appendInField('+')">+</button>
+            </div>
+            <div>
+                <button class="button" onclick="appendInField('0')">0</button>
+                <button onclick="appendInField('.')">.</button>
+                <button onclick="calc()">=</button>
+            </div>
+    </div>
+</div> 
+<script src="./scripts/main.js"></script>
+</body>
+</html>
